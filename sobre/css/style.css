@@ -1,0 +1,54 @@
+@import './reset.css';
+
+.logo {
+    width: 100%;
+    margin: 0 auto; /* Centraliza horizontalmente a imagem */
+    height: 200px; /* Defina a altura máxima desejada para a logo */
+    display: block; /* Garante que a logo é exibida como um bloco */
+}
+/* Adicione este código ao seu arquivo de estilo (style.css) */
+
+#mostrarMensagem {
+    background-color: green; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remova a borda */
+    padding: 10px 20px; /* Espaçamento interno (altura x largura) */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Altera o cursor para indicar que é um botão clicável */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+#mostrarMensagem:hover {
+    background-color: green; /* Cor de fundo quando o mouse passa por cima */
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+}
+
+.nav-container a {
+    text-decoration: none;
+}
+
+.button {
+    flex: 1;
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: greenyellow;
+}
+
+.destaque{
+    color: #212529;
+    font-size: 24px;
+    text-align: center;
+    
+}

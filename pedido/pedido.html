@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PEDIDOS LUH</title>
+</head>
+<body>
+    <header>
+        <div class="topo">
+            <img class="logo" src="/img/logo.jpg" alt="LUH'S CANDY Logo">
+        </div>
+        <nav class="nav-container">
+          <a href="http://127.0.0.1:5500/index.html" class="button" id="inicio-button">Início</a>
+          <button class="button" onclick="window.location.href='http://127.0.0.1:5500/index.html#produtos'">Produtos</button>
+          <button class="button" onclick="window.location.href='http://127.0.0.1:5500/sobre/sobre.html'">Sobre</button>
+          <button class="button" onclick="window.location.href='http://127.0.0.1:5500/contato/contato.html'">Contato</button>
+        </nav>
+    </header>
+    <section class="entre-em-contato">
+        <div class="contato-container">
+            <h2 class="faça">Nos envie seu</h2>
+            <h1 class="pedido">Pedido</h1>
+        </div>
+        <form class="custom-form" action="http://localhost:3000/enviar-email" method="post">
+            <!-- Seus campos do formulário aqui -->
+            <p class="form-field">
+              <label for="nome">Seu nome*</label>
+              <input type="text" id="nome" name="nome" placeholder="Nome">
+            </p>
+            <p class="form-field">
+              <label for="email">Seu email*</label>
+              <input type="email" id="email" name="email" placeholder="Email">
+            </p>
+            <p class="form-field">
+              <label for="contato">Seu Contato*</label>
+              <input type="text" id="contato" name="contato" placeholder="Contato">
+            </p>
+            <p class="form-field">
+              <label for="mensagem">Seu pedido*</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
+            </p>
+            <button type="submit" class="submit-button">Enviar</button>
+            <div id="mensagem" class="success-message" style="display:none;"></div>
+          </form>
+         
+            <div class="whatsapp">
+                <p>Faça seu pedido pelo WhatsApp</p>
+                <div class="whatsapp-logo">
+                <a href="https://wa.me/41995613571" target="_blank">&#x1F4F1;</a>
+                </div>
+            </div>
+          
+          <script src="script.js"></script>
+    </section>
+</body>
+</html>

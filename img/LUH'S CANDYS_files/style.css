@@ -1,0 +1,183 @@
+@import './reset.css';
+
+.logo {
+    width: 100%;
+    margin: 0 auto; /* Centraliza horizontalmente a imagem */
+    height: 200px; /* Defina a altura máxima desejada para a logo */
+    display: block; /* Garante que a logo é exibida como um bloco */
+}
+/* Adicione este código ao seu arquivo de estilo (style.css) */
+
+#mostrarMensagem {
+    background-color: green; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remova a borda */
+    padding: 10px 20px; /* Espaçamento interno (altura x largura) */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Altera o cursor para indicar que é um botão clicável */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+#mostrarMensagem:hover {
+    background-color: green; /* Cor de fundo quando o mouse passa por cima */
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+}
+
+.nav-container a {
+    text-decoration: none;
+}
+
+.button {
+    flex: 1;
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: greenyellow;
+}
+
+.destaque{
+    color: #212529;
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+body{
+    background-color: white;
+}
+
+.slideshow-container {
+    padding: 40px;
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  img {
+    width: 95%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 40px;
+  }
+  
+  .next {
+    right: 40px;
+  }
+
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 50px;
+}
+
+.trufa-brigadeiro,
+.trufa-coco,
+.trufa-ninho,
+.trufa-nutella {
+    width: 40%; /* Para garantir que duas divs caibam em uma linha */
+    display: flex;
+    align-items: center; /* Alinha itens verticalmente ao centro */
+}
+
+.trufabrigadeiroimg,
+.trufacocoimg,
+.trufaninhoimg {
+    width: 254px;
+    height: 200px;
+}
+
+.text {
+    padding: 20px; /* Adiciona algum espaçamento ao redor do texto */
+    flex: 1; /* Ocupa o restante do espaço disponível */
+}
+
+.title-brigadeiro {
+    font-size: 1.2em;
+    font-weight: bold;
+    color:#7a5407;
+    margin-bottom: 5px;
+}
+
+.button-pedido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-pedidos{
+    background-color: palevioletred;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 100px;
+   
+}
+
+
+.button-pedidos:hover {
+    background-color: greenyellow;
+}
+
+.sobre-rodape {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    padding: 30px; /* Espaçamento interno */
+    text-align: center; /* Alinhar o texto ao centro */
+}
+
+.sobre-nos {
+    margin: 0 auto; /* Centralizar o conteúdo dentro do rodapé */
+    max-width: 800px; /* Define a largura máxima do conteúdo */
+    padding: 20px; /* Espaçamento interno para o conteúdo "Sobre Nós" */
+}
+
+.text-sobre {
+    font-size: 16px; /* Tamanho da fonte para o texto "Sobre Nós" */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+.rodape {
+    margin-top: 20px; /* Espaçamento superior entre o conteúdo "Sobre Nós" e o rodapé */
+}
+
+.rodape p {
+    font-size: 14px; /* Tamanho da fonte para o texto do rodapé */
+    margin: 0; /* Remover margens padrão */
+}

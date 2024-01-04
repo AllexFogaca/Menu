@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./LUH&#39;S CANDYS_files/style.css">
+    <title>LUH'S CANDYS</title>
+</head>
+<body>
+    <header>
+        <div class="topo">
+            <img class="logo" src="./LUH&#39;S CANDYS_files/logo.jpg" alt="LUH&#39;S CANDY Logo">
+        </div>
+        <nav class="nav-container">
+            <button class="button">Início</button>
+            <button class="button" id="produtos-button">Produtos</button>
+            <button class="button" onclick="window.location.href=&#39;http://127.0.0.1:5500/sobre/sobre.html&#39;">Sobre</button>
+            <button class="button" onclick="window.location.href=&#39;http://127.0.0.1:5500/contato/contato.html&#39;">Contato</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="destaque">
+            <div class="slideshow-container">
+                <div class="mySlides fade" style="display: none;">
+                  <img src="./LUH&#39;S CANDYS_files/trufas.jpg" alt="Trufa 1">
+                </div>
+            
+                <div class="mySlides fade" style="display: block;">
+                  <img src="./LUH&#39;S CANDYS_files/trufas2.jpg" alt="Trufa 2">
+                </div>
+            
+                <div class="mySlides fade" style="display: none;">
+                  <img src="./LUH&#39;S CANDYS_files/trufas3.jpg" alt="Trufa 3">
+                </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+              
+            <p>Descubra uma doçura inigualável!</p>
+            
+        </section>
+        <section class="cards">
+            <div class="posts">
+                <div class="trufa-brigadeiro">
+                    <img class="trufabrigadeiroimg" src="./LUH&#39;S CANDYS_files/trufa-brigadeiro-delly.png" alt="Trufa de Brigadeiro da LUH">
+                    <div class="text">
+                        <span class="title-brigadeiro">
+                            <strong>Trufa de Brigadeiro</strong>
+                        </span>
+                        <p>Saborosa trufa de puro chocolate amargo recheada com brigadeiro.</p>
+                    </div>
+                </div>
+            
+                <div class="trufa-coco">
+                    <img class="trufacocoimg" src="./LUH&#39;S CANDYS_files/trufa-de-coco.png" alt="Trufa de Coco da LUH">
+                    <div class="text">
+                        <span class="title-brigadeiro">
+                            <strong>Trufa de Coco</strong>
+                        </span>
+                        <p>Saborosa trufa de puro chocolate amargo recheada com brigadeiro de coco.</p>
+                    </div>
+                </div>
+            
+                <div class="trufa-ninho">
+                    <img class="trufacocoimg" src="./LUH&#39;S CANDYS_files/trufa-ninho.png" alt="Trufa de Ninho da LUH">
+                    <div class="text">
+                        <span class="title-brigadeiro">
+                            <strong>Trufa de Ninho</strong>
+                        </span>
+                        <p>Saborosa trufa de puro chocolate amargo recheada com brigadeiro de Ninho.</p>
+                    </div>
+                </div>
+            
+                <div class="trufa-nutella">
+                    <img class="trufacocoimg" src="./LUH&#39;S CANDYS_files/trufaninhonutella.png" alt="Trufa de Ninho com Nutella da LUH">
+                    <div class="text">
+                        <span class="title-brigadeiro">
+                            <strong>Trufa de Ninho com Nutella</strong>
+                        </span>
+                        <p>Saborosa trufa de puro chocolate amargo recheada com brigadeiro de Ninho com Nutella.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="pedido">
+            <div class="button-pedido">
+                <button id="fazerPedidoBtn" class="button-pedidos">FAÇA SEU PEDIDO AQUI!</button>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="sobre-rodape">
+        <section class="sobre-nos">
+            <div class="text-sobre">Os doces da Luh surgiram como uma venda de trufas interna em uma empresa e se expandiu para clientes externos com ajuda de amigos e familiares, hoje a empresa conta com mais de 10 sabores de trufas
+                deliciosas feitas de chocolate amargo e brigadeiros da melhor qualidade, venha conhecer e se deliciar com essas novidades. </div>
+            
+        </section>
+        <div class="rodape">
+            <p>© 2023 LUH'S CANDY. Todos os direitos reservados.</p>
+            <p>Endereço alfredo scorsin, 174 Bairro Santa Felicidade
+                Curitiba Paraná
+            </p>
+        </div>
+    </footer>
+    <script src="./LUH&#39;S CANDYS_files/script.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
